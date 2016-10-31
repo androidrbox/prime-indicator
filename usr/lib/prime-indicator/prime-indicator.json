@@ -1,5 +1,6 @@
 {
 	"show_reboot_dialog": {
+	"es_LA": "Necesitas cerrar sesión para cambiar desde la ",
 	"hu_HU": "Ahhoz, hogy a ",
 	"it_IT": "Devi terminare la sessione per passare dalla GPU ",
 	"pt_PT": "Você precisa terminar sessão para trocar entre ",
@@ -7,6 +8,7 @@
 	"en_EN": "You need to log out to switch from the "
 	},
 	"msg_nvidia": {
+	"es_LA": "GPU dedicada NVIDIA",
 	"hu_HU": "dedikált NVIDIA videokártyá",
 	"it_IT": "dedicata NVIDIA",
 	"pt_PT": "GPU dedicada NVIDIA",
@@ -14,6 +16,7 @@
 	"en_EN": "dedicated NVIDIA GPU"
 	},
 	"msg_intel": {
+	"es_LA": "GPU integrada Intel",
 	"hu_HU": "beépített Intel videokártyá",
 	"it_IT": "integrata Intel",
 	"pt_PT": "GPU integrada Intel",
@@ -21,6 +24,7 @@
 	"en_EN": "integrated Intel GPU"
 	},
 	"show_reboot_dialog2": {
+	"es_LA": " a la ",
 	"hu_HU": "ról a ",
 	"it_IT": " alla GPU ",
 	"pt_PT": " ao ",
@@ -28,6 +32,7 @@
 	"en_EN": " to the "
 	},
 	"show_reboot_dialog3": {
+	"es_LA": ". Guarda tu trabajo antes de presionar el botón de Cerrar Sesión.",
 	"hu_HU": "ra válthassunk ki kell jelentkezni. Mentsd minden munkád mielőtt ezt megtennéd!",
 	"it_IT": ". Salva il tuo lavoro prima di premere il pulsante 'Log Out'.",
 	"pt_PT": ". Guarda o seu trabalho antes de clicar no botão inferior 'Terminar Sessão'.",
@@ -35,6 +40,7 @@
 	"en_EN": ". Save your work before clicking the Log Out button below."
 	},
 	"renderer_string": {
+	"es_LA": "Usando",
 	"hu_HU": "Használatban",
 	"it_IT": "In uso",
 	"pt_PT": "Usando",
@@ -42,6 +48,7 @@
 	"en_EN": "Using"
 	},
 	"switch_in_use": {
+	"es_LA": "Cambio rápido de tarjeta gráfica ...",
 	"hu_HU": "Váltás másik videokártyára...",
 	"it_IT": "Cambia velocemente scheda grafica ...",
 	"pt_PT": "Trocar rapidamente os gráficos ...",
@@ -49,6 +56,7 @@
 	"en_EN": "Quick switch graphics ..."
 	},
 	"toggle_power_management_enable": {
+	"es_LA": "Habilitar la gestión de energia de la GPU Nvidia",
 	"hu_HU": "NVIDIA energiagazdálkodás bekapcsolása",
 	"it_IT": "Abilita gestione dell'alimentazione GPU NVIDIA",
 	"pt_PT": "Ativar o gerenciamento de energia da GPU NVIDIA",
@@ -56,6 +64,7 @@
 	"en_EN": "Enable NVIDIA GPU Power Management"
 	},
 	"nv_power_string": {
+	"es_LA": "La GPU NVIDIA está ",
 	"hu_HU": "NVIDIA videokártya ",
 	"it_IT": "La GPU NVIDIA è ",
 	"pt_PT": "GPU NVIDIA está ligada ",
@@ -63,6 +72,7 @@
 	"en_EN": "NVIDIA GPU is powered "
 	},
 	"nv_power_string_on": {
+	"es_LA": "encendida",
 	"hu_HU": "bekapcsolva",
 	"it_IT": "accesa",
 	"pt_PT": "ligada",
@@ -70,6 +80,7 @@
 	"en_EN": "ON"
 	},
 	"nv_power_string_off": {
+	"es_LA": "apagada",
 	"hu_HU": "kikapcsolva",
 	"it_IT": "spenta",
 	"pt_PT": "desligada",
@@ -77,6 +88,7 @@
 	"en_EN": "OFF"
 	},
 	"nv_power_switch_string": {
+	"es_LA": "Forzar la GPU NVIDIA a ",
 	"hu_HU": "NVIDIA videokártya kényszerített ",
 	"it_IT": "Forza la GPU NVIDIA ad ",
 	"pt_PT": "Forçar GPU NVIDIA a ligar ",
@@ -84,6 +96,7 @@
 	"en_EN": "Force NVIDIA GPU to "
 	},
 	"nv_power_switch_string_on": {
+	"es_LA": "encenderse",
 	"hu_HU": "bekapcsolása",
 	"it_IT": "accendersi",
 	"pt_PT": "ligar",
@@ -91,6 +104,7 @@
 	"en_EN": "power ON"
 	},
 	"nv_power_switch_string_off": {
+	"es_LA": "apagarse",
 	"hu_HU": "kikapcsolása",
 	"it_IT": "spegnersi",
 	"pt_PT": "desligar",
@@ -98,6 +112,7 @@
 	"en_EN": "power OFF"
 	},
 	"run_nvidia_settings": {
+	"es_LA": "Abrir Panel de Control de NVIDIA",
 	"hu_HU": "NVIDIA Vezérlőpult",
 	"it_IT": "Apri impostazioni NVIDIA",
 	"pt_PT": "Abrir definições NVIDIA",
@@ -105,6 +120,7 @@
 	"en_EN": "Open NVIDIA Settings"
 	},
 	"quit": {
+	"es_LA": "Salir",
 	"hu_HU": "Kilépés",
 	"it_IT": "Esci",
 	"pt_PT": "Sair",
@@ -112,6 +128,7 @@
 	"en_EN": "Quit"
 	},
 	"logout_message": {
+	"es_LA": "Aparentemente estás utilizando un Entorno de Escritorio no soportado. ",
 	"hu_HU": "Úgy tűnik az általad használt asztali környezet jelenleg nem támogatott. ",
 	"it_IT": "L'ambiente desktop in uso non è supportato. ",
 	"pt_PT": "Parece que você está usando um ambiente Desktop não suportado.",
@@ -119,6 +136,7 @@
 	"en_EN": "It seems you're running an unsupported Desktop Environment. "
 	},
 	"logout_message2": {
+	"en_LA": "Por favor cierra e inicia sesión manualmente para completar el cambio.",
 	"hu_HU": "Ezért kézileg kell kijelentkezned a művelet befejezéséhez.",
 	"it_IT": "Per completare il passaggio devi terminare la sessione manualmente.",
 	"pt_PT": "Por favor termine a sessão manualmente e acesse novamente para completar a troca.",
@@ -126,7 +144,8 @@
 	"en_EN": "Please manually log out and then log in again to complete the switch."
 	},
 	"dialog.add_button": {
-	"hu_HU": "Kijelentkezés"
+	"es_LA": "Cerrar sesión",
+	"hu_HU": "Kijelentkezés",
 	"it_IT": "Termina sessione",
 	"pt_PT": "Terminar sessão",
 	"pt_BR": "Encerrar sessão",
