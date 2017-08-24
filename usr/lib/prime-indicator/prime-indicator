@@ -245,6 +245,8 @@ class Indicator:
             os.system("lxqt-leave --logout ")
         elif env.startswith("gnome") or env.startswith("pantheon") or env.startswith("unity"):
             os.system("gnome-session-quit --logout --no-prompt")
+        elif env.startswith("i3"):
+            os.system("i3-msg exit")
         else:
             message = "It seems you're running an unsupported Desktop Environment. " + \
                       "Please manually log out and then log in again to complete the switch."
