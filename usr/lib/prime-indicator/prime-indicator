@@ -54,8 +54,10 @@ INTEL = "intel"
 
 NVIDIA_COLOR = STD_ICONS_FOLDER + "prime-indicator-nvidia.svg"
 INTEL_COLOR = STD_ICONS_FOLDER + "prime-indicator-intel.svg"
+UNKNOWN_COLOR = STD_ICONS_FOLDER + "prime-indicator-unknown.svg"
 NVIDIA_SYMBOLIC = USER_ICONS_FOLDER + "prime-indicator-nvidia-symbolic-themed.svg"
 INTEL_SYMBOLIC = USER_ICONS_FOLDER + "prime-indicator-intel-symbolic-themed.svg"
+UNKNOWN_SYMBOLIC = USER_ICONS_FOLDER + "prime-indicator-unknown-symbolic-themed.svg"
 
 
 class Indicator:
@@ -90,7 +92,21 @@ class Indicator:
                 self.icon_name = INTEL_SYMBOLIC if self.active_gpu == INTEL else NVIDIA_SYMBOLIC
             self.icon_tooltip_text = "Active graphics card: " + ("Intel" if self.active_gpu == INTEL else "NVIDIA")
         else:
-            self.icon_name = "dialog-error"
+            if self.theme_icons == "theme-default":
+                theme = Gtk.IconTheme.get_default()
+                if theme.has_icon(self.active_gpu):
+                    self.icon_name = theme.lookup_icon(self.active_gpu, max(theme.get_icon_sizes(self.active_gpu)),
+                                                       0).get_filename()
+                else:
+                    self.icon_name = UNKNOWN_COLOR
+                    print("ALERT: GTK Icon Theme does not provide an icon for Unknown. Using default color icon instead!")
+            elif self.theme_icons == "color":
+                self.icon_name = UNKNOWN_COLOR
+            else:
+                if self.theme_icons.startswith("custom"):
+                    self.custom_color = re.search("custom\((.*)\)", self.theme_icons).group(1)
+                self.create_themed_icons()
+                self.icon_name = UNKNOWN_SYMBOLIC
             self.icon_tooltip_text = "Active graphics card: " + self.active_gpu
 
         self.menu = Gtk.Menu()
