@@ -259,7 +259,7 @@ class Indicator:
             os.system("budgie-session --logout")
         elif env.startswith("lxqt"):
             os.system("lxqt-leave --logout ")
-        elif env.startswith("gnome") or env.startswith("pantheon") or env.startswith("unity"):
+        elif env.startswith(("ubuntu:gnome", "gnome", "pantheon", "unity")):
             os.system("gnome-session-quit --logout --no-prompt")
         elif env.startswith("i3"):
             os.system("i3-msg exit")
