@@ -266,7 +266,7 @@ class Indicator:
         else:
             message = "It seems you're running an unsupported Desktop Environment. " + \
                       "Please manually log out and then log in again to complete the switch."
-            dialog = Gtk.MessageDialog(None, Gtk.DIALOG_MODAL, Gtk.MESSAGE_ERROR, Gtk.BUTTONS_OK, message)
+            dialog = Gtk.MessageDialog(None, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR, Gtk.ButtonsType.OK, message)
             dialog.set_deletable(False)
             dialog.run()
             restart()
